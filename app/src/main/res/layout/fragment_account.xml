@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_account"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/toolbar_bg"
+        android:elevation="4dp"
+        toolbar:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        toolbar:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <Button
+                android:id="@+id/btn_login_regs"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Login/Register"
+                android:textAllCaps="false"
+                android:textColor="@color/toolbar_bg"
+                android:background="@drawable/account_login_regs_btn"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lv_items_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:divider="@drawable/liner"
+        android:dividerHeight="1dp"></ListView>
+    <ListView
+        android:id="@+id/lv_items_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:divider="@drawable/liner"
+        android:dividerHeight="1dp"></ListView>
+    <ListView
+        android:id="@+id/lv_items_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:divider="@drawable/liner"
+        android:dividerHeight="1dp"></ListView>
+</LinearLayout>

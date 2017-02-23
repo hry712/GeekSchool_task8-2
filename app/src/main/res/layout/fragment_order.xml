@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver_gray">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_order"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_bg"
+        android:elevation="4dp"
+        toolbar:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        toolbar:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Order"
+            android:textSize="15dp"
+            android:textColor="@color/toolbar_text"/>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/unlogin_user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="You haven't logged in!"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login/Register"
+        android:textAllCaps="false"
+        android:textColor="@color/toolbar_text"
+        android:background="@drawable/order_login_regs_btn"/>
+
+</LinearLayout>
